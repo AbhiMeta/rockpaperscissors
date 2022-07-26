@@ -63,6 +63,18 @@ function lose(x, y) {
 
 function game() {
     for(let i = 0; i < 5; i++) {
-        
+        let sign = prompt("Rock, Paper, or Scissors")
+        if (sign.toLowerCase() == "rock") {
+            console.log(playRound(0, getComputerChoice()))
+        }
+        if(sign.toLowerCase() == "paper") {
+            console.log(playRound(1, getComputerChoice()))
+        }
+        if(sign.toLowerCase() == "scissors") {
+            console.log(playRound(2, getComputerChoice()))
+        }
     }
 }
+
+game()
+
